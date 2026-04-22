@@ -57,9 +57,12 @@ jobs:
             "" \
             "**Commits:** ${COMMIT_COUNT} new commit(s)" \
             "" \
+            "### Preview" \
+            "Verify changes on **[dev.bitcoinpaymentsalliance.org](https://dev.bitcoinpaymentsalliance.org)** before merging." \
+            "" \
             "### Checklist" \
             "- [ ] Review all changes" \
-            "- [ ] Verify CI passes" \
+            "- [ ] Verify on [dev.bitcoinpaymentsalliance.org](https://dev.bitcoinpaymentsalliance.org)" \
             "- [ ] Approve and merge when ready for production" \
             > /tmp/pr-body.md
 
