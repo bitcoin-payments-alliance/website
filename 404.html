@@ -19,7 +19,22 @@
             <a href="/#communities">Communities</a>
             <a href="/#goals">Goals</a>
             <a href="/#join">Join</a>
+            <div class="lang-switcher">
+                <span class="lang-current">EN</span>
+                <div class="lang-dropdown">
+                    <a href="/" class="active">English</a>
+                    <a href="/de/">Deutsch</a>
+                    <a href="/fr/">Français</a>
+                    <a href="/it/">Italiano</a>
+                    <a href="/es/">Español</a>
+                </div>
+            </div>
         </nav>
+        <button class="nav-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <div class="hero fade-in" style="min-height: 80vh;">
@@ -42,6 +57,18 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('header nav').classList.toggle('open');
+        });
+        document.querySelectorAll('.lang-switcher').forEach(function (el) {
+            el.addEventListener('click', function (e) { e.stopPropagation(); el.classList.toggle('open'); });
+        });
+        document.addEventListener('click', function () {
+            document.querySelectorAll('.lang-switcher').forEach(function (el) { el.classList.remove('open'); });
+        });
+    </script>
 </body>
 
 </html>
