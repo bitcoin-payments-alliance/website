@@ -459,6 +459,17 @@ footer {
     color: var(--color-text);
 }
 
+.footer-social {
+    color: var(--color-text-secondary);
+    transition: color 0.2s;
+    display: flex;
+}
+
+.footer-social:hover {
+    color: var(--color-text);
+    opacity: 1;
+}
+
 
 /* ============ Animations ============ */
 
