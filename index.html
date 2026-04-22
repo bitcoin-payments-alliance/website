@@ -1,51 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bitcoin Payments Alliance</title>
+        <meta name="description" content="Advancing real-world Bitcoin payments adoption worldwide." />
+        <meta property="og:title" content="Bitcoin Payments Alliance" />
+        <meta property="og:description" content="Advancing real-world Bitcoin payments adoption worldwide." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bitcoinpaymentsalliance.org/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bitcoin Payments Alliance" />
+        <meta name="twitter:description" content="Advancing real-world Bitcoin payments adoption worldwide." />
+        <link rel="alternate" hreflang="en" href="https://bitcoinpaymentsalliance.org/" />
+        <link rel="alternate" hreflang="de" href="https://bitcoinpaymentsalliance.org/de/" />
+        <link rel="alternate" hreflang="fr" href="https://bitcoinpaymentsalliance.org/fr/" />
+        <link rel="alternate" hreflang="it" href="https://bitcoinpaymentsalliance.org/it/" />
+        <link rel="alternate" hreflang="es" href="https://bitcoinpaymentsalliance.org/es/" />
+        <link rel="alternate" hreflang="x-default" href="https://bitcoinpaymentsalliance.org/" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+        <script>
+            (function () {
+                if (sessionStorage.getItem('lang-chosen')) return;
+                var lang = (navigator.language || '').toLowerCase().slice(0, 2);
+                var supported = { de: '/de/', fr: '/fr/', it: '/it/', es: '/es/' };
+                if (supported[lang]) {
+                    sessionStorage.setItem('lang-chosen', lang);
+                    window.location.replace(supported[lang]);
+                }
+            })();
+        </script>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bitcoin Payments Alliance</title>
-    <meta name="description" content="Advancing real-world Bitcoin payments adoption worldwide.">
-    <meta property="og:title" content="Bitcoin Payments Alliance">
-    <meta property="og:description" content="Advancing real-world Bitcoin payments adoption worldwide.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bitcoinpaymentsalliance.org/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bitcoin Payments Alliance">
-    <meta name="twitter:description" content="Advancing real-world Bitcoin payments adoption worldwide.">
-    <link rel="alternate" hreflang="en" href="https://bitcoinpaymentsalliance.org/">
-    <link rel="alternate" hreflang="de" href="https://bitcoinpaymentsalliance.org/de/">
-    <link rel="alternate" hreflang="fr" href="https://bitcoinpaymentsalliance.org/fr/">
-    <link rel="alternate" hreflang="it" href="https://bitcoinpaymentsalliance.org/it/">
-    <link rel="alternate" hreflang="es" href="https://bitcoinpaymentsalliance.org/es/">
-    <link rel="alternate" hreflang="x-default" href="https://bitcoinpaymentsalliance.org/">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <script>
-        (function () {
-            if (sessionStorage.getItem('lang-chosen')) return;
-            var lang = (navigator.language || '').toLowerCase().slice(0, 2);
-            var supported = { de: '/de/', fr: '/fr/', it: '/it/', es: '/es/' };
-            if (supported[lang]) {
-                sessionStorage.setItem('lang-chosen', lang);
-                window.location.replace(supported[lang]);
-            }
-        })();
-    </script>
-</head>
-
-<body>
-    <header class="fade-in">
-        <a href="/" class="logo-link">
-            <span class="logo-text">Bitcoin Payments Alliance</span>
-        </a>
-        <nav>
-            <a href="#mission">Mission</a>
-            <a href="#communities">Communities</a>
-            <a href="#goals">Goals</a>
-            <a href="#join">Join</a>
-        </nav>
-        <div class="lang-switcher">
+    <body>
+        <header class="fade-in">
+            <a href="/" class="logo-link">
+                <span class="logo-text">Bitcoin Payments Alliance</span>
+            </a>
+            <nav>
+                <a href="#mission">Mission</a>
+                <a href="#communities">Communities</a>
+                <a href="#goals">Goals</a>
+                <a href="#join">Join</a>
+            </nav>
+            <div class="lang-switcher">
                 <span class="lang-current">EN</span>
                 <div class="lang-dropdown">
                     <a href="/" class="active">English</a>
@@ -55,182 +54,221 @@
                     <a href="/es/">Español</a>
                 </div>
             </div>
-        <button class="nav-toggle" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
 
-    <div class="hero fade-in">
-        <div class="glow"></div>
-        <div class="headline">
-            <h1 class="slide-up">Advancing Real-World<br>Bitcoin Payments</h1>
-            <p class="slide-up delay-300">
-                A global alliance of communities, merchants, and builders working together to make Bitcoin payments a daily reality — everywhere.
-            </p>
-            <a href="#mission" class="button slide-up delay-600">Learn More</a>
+        <div class="hero fade-in">
+            <div class="glow"></div>
+            <div class="headline">
+                <h1 class="slide-up">
+                    Advancing Real-World
+                    <br />
+                    Bitcoin Payments
+                </h1>
+                <p class="slide-up delay-300">
+                    A global alliance of communities, merchants, and builders working together to make Bitcoin payments
+                    a daily reality — everywhere.
+                </p>
+                <a href="#mission" class="button slide-up delay-600">Learn More</a>
+            </div>
         </div>
-    </div>
 
-    <main>
-        <section id="mission">
-            <h1>Mission</h1>
-            <h2>Bridging the gap between Bitcoin technology and everyday commerce</h2>
-            <p>
-                Around the world, pioneering communities have proven that Bitcoin payments work in practice — at supermarkets, restaurants, and local shops. But these efforts remain isolated. Each community solves the same challenges independently: merchant onboarding, point-of-sale integration, volatility management, and regulatory compliance.
-            </p>
-            <p>
-                The Bitcoin Payments Alliance connects these communities to share knowledge, develop common standards, and accelerate adoption globally. Together, we can achieve what no single project can do alone.
-            </p>
-        </section>
+        <main>
+            <section id="mission">
+                <h1>Mission</h1>
+                <h2>Bridging the gap between Bitcoin technology and everyday commerce</h2>
+                <p>
+                    Around the world, pioneering communities have proven that Bitcoin payments work in practice — at
+                    supermarkets, restaurants, and local shops. But these efforts remain isolated. Each community solves
+                    the same challenges independently: merchant onboarding, point-of-sale integration, volatility
+                    management, and regulatory compliance.
+                </p>
+                <p>
+                    The Bitcoin Payments Alliance connects these communities to share knowledge, develop common
+                    standards, and accelerate adoption globally. Together, we can achieve what no single project can do
+                    alone.
+                </p>
+            </section>
 
-        <section id="communities">
-            <h1>Communities</h1>
-            <h2>Pioneering Bitcoin payments across the globe</h2>
-            <p>A selection of projects and communities driving Bitcoin adoption worldwide.</p>
-            <div class="community-grid">
-                <div class="community-card">
-                    <h3>Bitcoin Beach</h3>
-                    <span class="location">El Salvador</span>
-                    <p>The grassroots movement that helped inspire an entire nation to adopt Bitcoin as legal tender.</p>
+            <section id="communities">
+                <h1>Communities</h1>
+                <h2>Pioneering Bitcoin payments across the globe</h2>
+                <p>A selection of projects and communities driving Bitcoin adoption worldwide.</p>
+                <div class="community-grid">
+                    <div class="community-card">
+                        <h3>Bitcoin Beach</h3>
+                        <span class="location">El Salvador</span>
+                        <p>
+                            The grassroots movement that helped inspire an entire nation to adopt Bitcoin as legal
+                            tender.
+                        </p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Lugano</h3>
+                        <span class="location">Switzerland</span>
+                        <p>
+                            The Plan B initiative making Lugano a European Bitcoin hub with city-wide merchant adoption.
+                        </p>
+                    </div>
+                    <div class="community-card">
+                        <h3>FREE Madeira</h3>
+                        <span class="location">Portugal</span>
+                        <p>
+                            Turning the island of Madeira into a Bitcoin-friendly destination with growing merchant
+                            adoption.
+                        </p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Bitcoin Ekasi</h3>
+                        <span class="location">South Africa</span>
+                        <p>A township-based Bitcoin economy bringing financial inclusion to underserved communities.</p>
+                    </div>
+                    <div class="community-card">
+                        <h3>DFX &amp; SPAR</h3>
+                        <span class="location">Switzerland</span>
+                        <p>
+                            Bitcoin payments at one of Europe's largest retail chains, powered by DFX.swiss
+                            infrastructure.
+                        </p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Qerko</h3>
+                        <span class="location">Czech Republic</span>
+                        <p>Lightning payments at 200+ restaurants in Prague, integrated directly into the bill.</p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Bitcoin Jungle</h3>
+                        <span class="location">Costa Rica</span>
+                        <p>A thriving Bitcoin community on Costa Rica's Pacific coast, connecting expats and locals.</p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Tando</h3>
+                        <span class="location">Kenya</span>
+                        <p>
+                            Enabling Bitcoin payments for everyday purchases across Kenya with mobile-first
+                            infrastructure.
+                        </p>
+                    </div>
+                    <div class="community-card">
+                        <h3>BTC Isla</h3>
+                        <span class="location">Mexico</span>
+                        <p>Building a Bitcoin circular economy on Isla Mujeres with local merchants and tourism.</p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Pleb QR</h3>
+                        <span class="location">Thailand</span>
+                        <p>Bringing Lightning payments to merchants across Thailand, from street food to hotels.</p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Bitcoin é aqui!</h3>
+                        <span class="location">Brazil</span>
+                        <p>A growing movement centered in Porto Alegre, driving merchant adoption across Brazil.</p>
+                    </div>
+                    <div class="community-card">
+                        <h3>Vancouver Bitcoiners</h3>
+                        <span class="location">Canada</span>
+                        <p>
+                            Building a network of Bitcoin-accepting merchants across Vancouver's diverse neighborhoods.
+                        </p>
+                    </div>
+                    <div class="community-card placeholder">
+                        <h3>Your Community</h3>
+                        <span class="location">Worldwide</span>
+                        <p>Building Bitcoin payments adoption in your area? We want to hear from you.</p>
+                        <a href="#join" class="card-link">Get in Touch</a>
+                    </div>
                 </div>
-                <div class="community-card">
-                    <h3>Lugano</h3>
-                    <span class="location">Switzerland</span>
-                    <p>The Plan B initiative making Lugano a European Bitcoin hub with city-wide merchant adoption.</p>
+            </section>
+
+            <section id="goals">
+                <h1>Goals</h1>
+                <h2>What we're working towards</h2>
+                <div class="goals-list">
+                    <div class="goal">
+                        <h3>Common Standards</h3>
+                        <p>
+                            Develop shared standards for POS integration so merchants and developers don't reinvent the
+                            wheel.
+                        </p>
+                    </div>
+                    <div class="goal">
+                        <h3>Knowledge Sharing</h3>
+                        <p>
+                            What works in Lugano, what works at Bitcoin Beach — and why. Shared learnings across all
+                            communities.
+                        </p>
+                    </div>
+                    <div class="goal">
+                        <h3>Seamless Experience</h3>
+                        <p>
+                            A tourist paying with Bitcoin in El Salvador should have the same experience in Switzerland
+                            or Costa Rica.
+                        </p>
+                    </div>
+                    <div class="goal">
+                        <h3>Merchant Education</h3>
+                        <p>Multilingual resources and toolkits to help merchants accept Bitcoin with confidence.</p>
+                    </div>
                 </div>
-                <div class="community-card">
-                    <h3>FREE Madeira</h3>
-                    <span class="location">Portugal</span>
-                    <p>Turning the island of Madeira into a Bitcoin-friendly destination with growing merchant adoption.</p>
+            </section>
+
+            <section id="join">
+                <h1>Join the Alliance</h1>
+                <h2>Whether you're a community, merchant, or builder — there's a place for you</h2>
+                <p>
+                    The Bitcoin Payments Alliance is open to anyone committed to advancing real-world Bitcoin payments.
+                    We're building this together.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:info@bitcoinpaymentsalliance.org" class="button">Get in Touch</a>
                 </div>
-                <div class="community-card">
-                    <h3>Bitcoin Ekasi</h3>
-                    <span class="location">South Africa</span>
-                    <p>A township-based Bitcoin economy bringing financial inclusion to underserved communities.</p>
-                </div>
-                <div class="community-card">
-                    <h3>DFX &amp; SPAR</h3>
-                    <span class="location">Switzerland</span>
-                    <p>Bitcoin payments at one of Europe's largest retail chains, powered by DFX.swiss infrastructure.</p>
-                </div>
-                <div class="community-card">
-                    <h3>Qerko</h3>
-                    <span class="location">Czech Republic</span>
-                    <p>Lightning payments at 200+ restaurants in Prague, integrated directly into the bill.</p>
-                </div>
-                <div class="community-card">
-                    <h3>Bitcoin Jungle</h3>
-                    <span class="location">Costa Rica</span>
-                    <p>A thriving Bitcoin community on Costa Rica's Pacific coast, connecting expats and locals.</p>
-                </div>
-                <div class="community-card">
-                    <h3>Tando</h3>
-                    <span class="location">Kenya</span>
-                    <p>Enabling Bitcoin payments for everyday purchases across Kenya with mobile-first infrastructure.</p>
-                </div>
-                <div class="community-card">
-                    <h3>BTC Isla</h3>
-                    <span class="location">Mexico</span>
-                    <p>Building a Bitcoin circular economy on Isla Mujeres with local merchants and tourism.</p>
-                </div>
-                <div class="community-card">
-                    <h3>Pleb QR</h3>
-                    <span class="location">Thailand</span>
-                    <p>Bringing Lightning payments to merchants across Thailand, from street food to hotels.</p>
-                </div>
-                <div class="community-card">
-                    <h3>Bitcoin é aqui!</h3>
-                    <span class="location">Brazil</span>
-                    <p>A growing movement centered in Porto Alegre, driving merchant adoption across Brazil.</p>
-                </div>
-                <div class="community-card">
-                    <h3>Vancouver Bitcoiners</h3>
-                    <span class="location">Canada</span>
-                    <p>Building a network of Bitcoin-accepting merchants across Vancouver's diverse neighborhoods.</p>
-                </div>
-                <div class="community-card placeholder">
-                    <h3>Your Community</h3>
-                    <span class="location">Worldwide</span>
-                    <p>Building Bitcoin payments adoption in your area? We want to hear from you.</p>
-                    <a href="#join" class="card-link">Get in Touch</a>
-                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <span class="footer-name">Bitcoin Payments Alliance</span>
+                <nav class="footer-nav">
+                    <a href="#mission">Mission</a>
+                    <a href="#communities">Communities</a>
+                    <a href="#goals">Goals</a>
+                    <a href="#join">Join</a>
+                    <a href="/legal.html">Legal & Privacy</a>
+                </nav>
+                <a href="https://github.com/bitcoin-payments-alliance" class="footer-social" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                    </svg>
+                </a>
             </div>
-        </section>
+        </footer>
 
-        <section id="goals">
-            <h1>Goals</h1>
-            <h2>What we're working towards</h2>
-            <div class="goals-list">
-                <div class="goal">
-                    <h3>Common Standards</h3>
-                    <p>Develop shared standards for POS integration so merchants and developers don't reinvent the wheel.</p>
-                </div>
-                <div class="goal">
-                    <h3>Knowledge Sharing</h3>
-                    <p>What works in Lugano, what works at Bitcoin Beach — and why. Shared learnings across all communities.</p>
-                </div>
-                <div class="goal">
-                    <h3>Seamless Experience</h3>
-                    <p>A tourist paying with Bitcoin in El Salvador should have the same experience in Switzerland or Costa Rica.</p>
-                </div>
-                <div class="goal">
-                    <h3>Merchant Education</h3>
-                    <p>Multilingual resources and toolkits to help merchants accept Bitcoin with confidence.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="join">
-            <h1>Join the Alliance</h1>
-            <h2>Whether you're a community, merchant, or builder — there's a place for you</h2>
-            <p>
-                The Bitcoin Payments Alliance is open to anyone committed to advancing real-world Bitcoin payments. We're building this together.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:info@bitcoinpaymentsalliance.org" class="button">Get in Touch</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <span class="footer-name">Bitcoin Payments Alliance</span>
-            <nav class="footer-nav">
-                <a href="#mission">Mission</a>
-                <a href="#communities">Communities</a>
-                <a href="#goals">Goals</a>
-                <a href="#join">Join</a>
-                <a href="/legal.html">Legal & Privacy</a>
-            </nav>
-            <a href="https://github.com/bitcoin-payments-alliance" class="footer-social" aria-label="GitHub">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelector('.nav-toggle').addEventListener('click', function () {
-            document.querySelector('header nav').classList.toggle('open');
-        });
-        document.querySelectorAll('.lang-switcher').forEach(function (el) {
-            el.addEventListener('click', function (e) {
-                e.stopPropagation();
-                el.classList.toggle('open');
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', function () {
+                document.querySelector('header nav').classList.toggle('open');
             });
-        });
-        document.addEventListener('click', function () {
             document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                el.classList.remove('open');
+                el.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    el.classList.toggle('open');
+                });
             });
-        });
-        document.querySelectorAll('.lang-dropdown a').forEach(function (a) {
-            a.addEventListener('click', function () {
-                sessionStorage.setItem('lang-chosen', '1');
+            document.addEventListener('click', function () {
+                document.querySelectorAll('.lang-switcher').forEach(function (el) {
+                    el.classList.remove('open');
+                });
             });
-        });
-    </script>
-</body>
-
+            document.querySelectorAll('.lang-dropdown a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    sessionStorage.setItem('lang-chosen', '1');
+                });
+            });
+        </script>
+    </body>
 </html>
