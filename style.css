@@ -1,19 +1,21 @@
 :root {
-    --color-bg: #0A090C;
+    --color-bg: #0a090c;
     --color-surface: #13121a;
     --color-text: #ffffff;
     --color-text-secondary: rgba(255, 255, 255, 0.6);
     --color-accent: #f7931a;
     --color-accent-dim: rgba(247, 147, 26, 0.15);
     --color-border: rgba(255, 255, 255, 0.08);
-    --font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --text-size: 18px;
     --line-height: 1.7;
     --max-width: 1100px;
 }
 
 /* Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -43,7 +45,6 @@ a {
 a:hover {
     opacity: 0.8;
 }
-
 
 /* ============ Header ============ */
 
@@ -112,7 +113,6 @@ header nav a:hover {
     transition: transform 0.2s;
 }
 
-
 /* ============ Language Switcher ============ */
 
 .lang-switcher {
@@ -132,11 +132,13 @@ header nav a:hover {
     padding: 4px 8px;
     border: 1px solid var(--color-border);
     border-radius: 6px;
-    transition: border-color 0.2s, color 0.2s;
+    transition:
+        border-color 0.2s,
+        color 0.2s;
 }
 
 .lang-current::after {
-    content: "";
+    content: '';
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid var(--color-text-secondary);
@@ -180,7 +182,9 @@ header nav a:hover {
     font-weight: 400;
     text-transform: none;
     letter-spacing: 0;
-    transition: background 0.15s, color 0.15s;
+    transition:
+        background 0.15s,
+        color 0.15s;
 }
 
 .lang-dropdown a:hover {
@@ -193,7 +197,6 @@ header nav a:hover {
     color: var(--color-accent);
     font-weight: 600;
 }
-
 
 /* ============ Hero ============ */
 
@@ -241,7 +244,6 @@ header nav a:hover {
     line-height: 1.6;
 }
 
-
 /* ============ Buttons ============ */
 
 .button {
@@ -259,7 +261,9 @@ header nav a:hover {
     text-decoration: none;
     background: transparent;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition:
+        background 0.2s,
+        color 0.2s;
 }
 
 .button:hover {
@@ -267,7 +271,6 @@ header nav a:hover {
     color: var(--color-bg);
     opacity: 1;
 }
-
 
 /* ============ Main Sections ============ */
 
@@ -310,7 +313,6 @@ section h3 {
     font-weight: 600;
     margin-bottom: 8px;
 }
-
 
 /* ============ Community Grid ============ */
 
@@ -369,7 +371,6 @@ section h3 {
     font-weight: 600;
 }
 
-
 /* ============ Goals ============ */
 
 .goals-list {
@@ -394,7 +395,6 @@ section h3 {
     line-height: 1.6;
     margin-bottom: 0;
 }
-
 
 /* ============ Join / Contact ============ */
 
@@ -421,7 +421,6 @@ section h3 {
     gap: 16px;
     flex-wrap: wrap;
 }
-
 
 /* ============ Footer ============ */
 
@@ -471,7 +470,6 @@ footer {
     opacity: 1;
 }
 
-
 /* ============ Legal Page ============ */
 
 .legal-page {
@@ -493,7 +491,6 @@ footer {
     margin-top: 24px;
 }
 
-
 /* ============ Animations ============ */
 
 .fade-in {
@@ -513,8 +510,12 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
@@ -528,7 +529,6 @@ footer {
     }
 }
 
-
 /* ============ Reduced Motion ============ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -541,7 +541,6 @@ footer {
         transform: none !important;
     }
 }
-
 
 /* ============ Responsive ============ */
 
