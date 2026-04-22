@@ -545,7 +545,7 @@ footer {
 
 /* ============ Responsive ============ */
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     header {
         padding: 16px 24px;
     }
