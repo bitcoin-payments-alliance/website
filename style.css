@@ -77,6 +77,7 @@ header {
 header nav {
     display: flex;
     gap: 32px;
+    align-items: center;
 }
 
 header nav a {
@@ -572,29 +573,9 @@ footer {
         display: flex;
     }
 
-    .lang-switcher {
-        align-self: flex-start;
-    }
-
-    .lang-dropdown {
-        position: static;
-        box-shadow: none;
-        border: none;
-        background: transparent;
-        padding: 4px 0 0 8px;
-    }
-
-    .lang-switcher.open .lang-dropdown {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .lang-dropdown a {
-        padding: 4px 10px;
-        border: 1px solid var(--color-border);
-        border-radius: 6px;
-        font-size: 13px;
+    header > .lang-switcher {
+        order: 0;
+        margin-right: 8px;
     }
 
     .hero {
