@@ -471,6 +471,28 @@ footer {
 }
 
 
+/* ============ Legal Page ============ */
+
+.legal-page {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 120px 40px 0;
+}
+
+.legal-page section {
+    border-top: none;
+    padding: 40px 0;
+}
+
+.legal-page section:first-child {
+    padding-top: 60px;
+}
+
+.legal-page h3 {
+    margin-top: 24px;
+}
+
+
 /* ============ Animations ============ */
 
 .fade-in {
