@@ -373,7 +373,7 @@ section h3 {
 
 .goals-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     margin-top: 40px;
 }
@@ -528,6 +528,20 @@ footer {
 }
 
 
+/* ============ Reduced Motion ============ */
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .slide-up,
+    .delay-300,
+    .delay-600 {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+
 /* ============ Responsive ============ */
 
 @media (max-width: 768px) {
@@ -601,7 +615,7 @@ footer {
     }
 
     .goals-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     footer {
